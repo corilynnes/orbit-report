@@ -12,5 +12,14 @@ constructor(name: string, type: string, launchDate: string, orbitType: string, o
     this.orbitType = orbitType;
     this.operational = operational;
 }
+shouldReturnWarning() {
+    if (this.type.toUpperCase() === "SPACE DEBRIS") {
+        return true;
+    } else {
+        return false;
+
+    }
+}
+
 
 }
